@@ -181,14 +181,14 @@
     },
     {
         link: "https://amzn.to/49zWOFg",
-        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/Weight Vest.png",
+        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/Weight%20Vest.png",
         name: "ZELUS Weighted Vest",
         price: "$28.99",
         description: "Crush your fitness goals with this ultimate workout companion - sweat-resistant & adjustable for all-day comfort. 4.4★ 13K+ reviews!"
     },
     {
         link: "https://amzn.to/49HAuZt",
-        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/Yoga Mat.png",
+        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/YogaMat.png",
         name: "Amazon Basics Extra Thick Exercise Yoga Mat",
         price: "$16.79",
         description: "Premium non-slip yoga mat with carrying strap - perfect for home workouts, yoga, or Pilates. Extra cushioning for comfort. 4.6★ top seller!"
@@ -223,6 +223,12 @@
         }
 
         // Initialize on page load
+        
+        // Mobile-friendly: click anywhere on card to go to product
+        if (window.innerWidth <= 768) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => window.open(product.link, '_blank'));
+        }
         generateProducts();
     </script>
 </body>
