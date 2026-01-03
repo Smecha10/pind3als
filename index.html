@@ -85,13 +85,6 @@
             color: white;
         }
 
-        .product-image {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
 
         .product-name {
             font-size: 1.3em;
@@ -167,28 +160,23 @@
         const products = [
     {
         link: "https://amzn.to/4q9Dt3G",
-        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/Dumbbells.png",
         name: "Amazon Basics Neoprene Dumbbell Hand Weights",
         price: "$18.59",
         description: "Build strength at home with these premium neoprene dumbbells - perfect grip, no slipping! Top-rated 4.8★ with 121K+ happy customers"
-    },
     {
         link: "https://amzn.to/3L8j7IV",
-        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/Owala.png",
         name: "Owala FreeSip Insulated Water Bottle",
         price: "$32.99",
         description: "Stay hydrated in style! Insulated stainless steel keeps drinks cold for 24hrs. Unique FreeSip spout - sip or swig. 4.7★ bestseller!"
     },
     {
         link: "https://amzn.to/49zWOFg",
-        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/Weight%20Vest.png",
         name: "ZELUS Weighted Vest",
         price: "$28.99",
         description: "Crush your fitness goals with this ultimate workout companion - sweat-resistant & adjustable for all-day comfort. 4.4★ 13K+ reviews!"
     },
     {
         link: "https://amzn.to/49HAuZt",
-        image: "https://raw.githubusercontent.com/Smecha10/pind3als/main/images/YogaMat.png",
         name: "Amazon Basics Extra Thick Exercise Yoga Mat",
         price: "$16.79",
         description: "Premium non-slip yoga mat with carrying strap - perfect for home workouts, yoga, or Pilates. Extra cushioning for comfort. 4.6★ top seller!"
@@ -206,7 +194,6 @@
                 card.innerHTML = `
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="${product.image}" alt="${product.name}" class="product-image">
                             <h3 class="product-name">${product.name}</h3>
                             <div class="product-price">${product.price}</div>
                         </div>
