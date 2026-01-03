@@ -47,11 +47,11 @@
 
         .product-card {
             perspective: 1000px;
-    height: 280px;        
+            height: 280px;
         }
 
-    .card-inner {
-            position:180pxrelative;
+        .card-inner {
+            position: relative;
             width: 100%;
             height: 100%;
             transition: transform 0.8s;
@@ -84,7 +84,6 @@
             transform: rotateY(180deg);
             color: white;
         }
-
 
         .product-name {
             font-size: 1.3em;
@@ -134,6 +133,16 @@
             background: #f0f0f0;
         }
 
+        footer {
+            text-align: center;
+            padding: 40px 20px 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.75em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
@@ -156,35 +165,38 @@
         <!-- Products will be dynamically inserted here -->
     </div>
 
-    <script>
-        // ADD YOUR PRODUCTS HERE
-        const products = [
-    {
-        link: "https://amzn.to/4q9Dt3G",
-        name: "Amazon Basics Neoprene Dumbbell Hand Weights",
-        price: "$18.59",
-        description: "Build strength at home with these premium neoprene dumbbells - perfect grip, no slipping! Top-rated 4.8★ with 121K+ happy customers"
-    },
-    {
-        link: "https://amzn.to/3L8j7IV",
-        name: "Owala FreeSip Insulated Water Bottle",
-        price: "$32.99",
-        description: "Stay hydrated in style! Insulated stainless steel keeps drinks cold for 24hrs. Unique FreeSip spout - sip or swig. 4.7★ bestseller!"
-    },
-    {
-        link: "https://amzn.to/49zWOFg",
-        name: "ZELUS Weighted Vest",
-        price: "$28.99",
-        description: "Crush your fitness goals with this ultimate workout companion - sweat-resistant & adjustable for all-day comfort. 4.4★ 13K+ reviews!"
-    },
-    {
-        link: "https://amzn.to/49HAuZt",
-        name: "Amazon Basics Extra Thick Exercise Yoga Mat",
-        price: "$16.79",
-        description: "Premium non-slip yoga mat with carrying strap - perfect for home workouts, yoga, or Pilates. Extra cushioning for comfort. 4.6★ top seller!"
-    }        
-];
+    <footer>
+        <p>As an Amazon Associate I earn from qualifying purchases. This means that if you click on a link and make a purchase, I may receive a small commission at no extra cost to you. All opinions are my own and I only recommend products I genuinely believe in.</p>
+    </footer>
 
+    <script>
+        // Products data
+        const products = [
+            {
+                link: "https://amzn.to/4q9Dt3G",
+                name: "Amazon Basics Neoprene Dumbbell Hand Weights",
+                price: "$18.59",
+                description: "Build strength at home with these premium neoprene dumbbells - perfect grip, no slipping! Top-rated 4.8★ with 121K+ happy customers"
+            },
+            {
+                link: "https://amzn.to/3L8j7IV",
+                name: "Owala FreeSip Insulated Water Bottle",
+                price: "$32.99",
+                description: "Stay hydrated in style! Insulated stainless steel keeps drinks cold for 24hrs. Unique FreeSip spout - sip or swig. 4.7★ bestseller!"
+            },
+            {
+                link: "https://amzn.to/49zWOFg",
+                name: "ZELUS Weighted Vest",
+                price: "$28.99",
+                description: "Crush your fitness goals with this ultimate workout companion - sweat-resistant & adjustable for all-day comfort. 4.4★ 13K+ reviews!"
+            },
+            {
+                link: "https://amzn.to/49HAuZt",
+                name: "Amazon Basics Extra Thick Exercise Yoga Mat",
+                price: "$16.79",
+                description: "Premium non-slip yoga mat with carrying strap - perfect for home workouts, yoga, or Pilates. Extra cushioning for comfort. 4.6★ top seller!"
+            }
+        ];
 
         // Generate product cards dynamically
         function generateProducts() {
@@ -208,23 +220,18 @@
                     </div>
                 `;
                 
+                // Mobile: click to open product link
+                if (window.innerWidth <= 768) {
+                    card.style.cursor = 'pointer';
+                    card.addEventListener('click', () => window.open(product.link, '_blank'));
+                }
+                
                 container.appendChild(card);
             });
         }
 
         // Initialize on page load
-        
-        // Mobile-friendly: click anywhere on card to go to product
-        if (window.innerWidth <= 768) {
-            card.style.cursor = 'pointer';
-            card.addEventListener('click', () => window.open(product.link, '_blank'));
-        }
         generateProducts();
     </script>
 </body>
-    
-    <footer style="text-align: center; padding: 40px 20px 20px; color: rgba(255,255,255,0.7); font-size: 0.75em; max-width: 800px; margin: 0 auto; line-height: 1.6;">
-        <p>As an Amazon Associate I earn from qualifying purchases. This means that if you click on a link and make a purchase, I may receive a small commission at no extra cost to you. All opinions are my own and I only recommend products I genuinely believe in.</p>
-    </footer>
-
 </html>
