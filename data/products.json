@@ -7,5 +7,25 @@
     "affiliateLink": "",
     "image": "images/Dumbbells.png",
     "description": "Compact dumbbells perfect for home workouts and progressive overload."
+  },
+  {
+    "id": "kettlebell-set-of-5",
+    "name": "Kettlebell Set of 5",
+    "price": "$29.99",
+    "deal": "",
+    "affiliateLink": "TODO",
+    "image": "images/dumbbells.png",
+    "description": "This 5-piece kettlebell set is perfect for home workouts or fitness classes. The stainless steel weight plates are durable and easy to clean, making them a great addition to any gym or fitness studio.",
+    "addedAt": "2026-01-07T22:33:03.570753Z"
+  },
+  {
+    "id": "weightlifting-kettlebell-set",
+    "name": "Weightlifting Kettlebell Set",
+    "price": "$29.99",
+    "deal": "",
+    "affiliateLink": "TODO",
+    "image": "images/dumbbells.png",
+    "description": "This high-quality weightlifting kettlebell set includes 5 durable plates and a comfortable grip handle, making it easy to lift and use for your workouts. Its compact design allows for a space-saving storage solution, while the ergonomic handles reduce strain on your hands and wrists. Get ready to take your fitness journey to the next level with this premium kettlebell set.",
+    "addedAt": "2026-01-07T22:33:15.173879Z"
   }
 ]
