@@ -27,5 +27,50 @@
     "image": "images/dumbbells.png",
     "description": "This high-quality weightlifting kettlebell set includes 5 durable plates and a comfortable grip handle, making it easy to lift and use for your workouts. Its compact design allows for a space-saving storage solution, while the ergonomic handles reduce strain on your hands and wrists. Get ready to take your fitness journey to the next level with this premium kettlebell set.",
     "addedAt": "2026-01-07T22:33:15.173879Z"
-  }
+  },
+    {
+        "id": "beats-solo-4",
+        "name": "Beats Solo 4 - Wireless Bluetooth Headphones",
+        "price": "Now $129.95",        "deal": "35% off",
+        "originalPrice": "$199.95",
+        "affiliateLink": "https://amzn.to/3Z1CAy9",
+        "image": "https://m.media-amazon.com/images/I/51YE6tZzp5L._AC_SL1500_.jpg",
+        "description": "Wireless on-ear headphones with 50-hour battery life, powerful sound, and ultra-lightweight comfort. Deal selling fast!"
+    },
+    {
+        "id": "kindle-colorsoft",
+        "name": "Amazon Kindle Colorsoft 16 GB",
+        "price": "Now $199.99",        "deal": "20% off",
+        "originalPrice": "$249.99",
+        "affiliateLink": "https://amzn.to/4qDNQEl",
+        "image": "https://m.media-amazon.com/images/I/61g-9U4vFPL._AC_SL1000_.jpg",
+        "description": "Newest Kindle with color display and adjustable warm light. Read books in vibrant color. Deal selling fast!"
+    },
+    {
+        "id": "roku-smart-tv-50",
+        "name": "Roku Smart TV 50-Inch 4K HDR",
+        "price": "Now $248.00",        "deal": "17% off",
+        "originalPrice": "$299.99",
+        "affiliateLink": "https://amzn.to/4qbftx0",
+        "image": "https://m.media-amazon.com/images/I/71vVE9K9QrL._AC_SL1500_.jpg",
+        "description": "50-inch 4K HDR smart TV with RokuTV and enhanced voice remote for streaming. Deal selling fast!"
+    },
+    {
+        "id": "kindle-scribe-64gb",
+        "name": "Amazon Kindle Scribe 64GB",
+        "price": "Now $309.99",        "deal": "31% off",
+        "originalPrice": "$449.99",
+        "affiliateLink": "https://amzn.to/4prEiUk",
+        "image": "https://m.media-amazon.com/images/I/61nvJiHkWsL._AC_SL1000_.jpg",
+        "description": "10.2-inch display for writing in books and notes with built-in AI. Your notes, documents and books, all in one place."
+    },
+    {
+        "id": "energizer-aa-batteries",
+        "name": "Energizer Ultimate Lithium AA Batteries 24 Pack",
+        "price": "Now $37.68",        "deal": "44% off",
+        "originalPrice": "$66.98",
+        "affiliateLink": "https://amzn.to/4jsEy3Y",
+        "image": "https://m.media-amazon.com/images/I/81YzcCqFykL._AC_SL1500_.jpg",
+        "description": "Ultimate lithium AA batteries with longest-lasting power. Perfect for high-drain devices. Amazing deal!"
+    
 ]
